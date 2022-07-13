@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@400;700&family=League+Spartan:wght@300;400;500;600&family=Open+Sans&family=PT+Sans&family=Roboto+Serif:opsz,wght@8..144,200&display=swap");
+
+:root {
+	--bg-color: #2a2a2a;
+	--button-color: #4cc986;
+	--greentext-color: #5fe19b;
+	--whitetext-color: #ffffff;
+	--inputText-color: #939393;
+	--input-color: #3d3d3d;
+	--checkbox-color: #36b972;
+	--alternative-color: #303030;
+
+	--exo-letter: "Exo", sans-serif;
+}
+
+body {
+	background-repeat: no-repeat;
+	color: white;
+	width: 320px;
+	height: 845px;
+	background-image: url(https://images.unsplash.com/photo-1591109864300-46c417fa0475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z2FtaW5nJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: var(--exo-letter);
+}
+
+header {
+	background-color: var(--bg-color);
+	width: 320px;
+	height: 78px;
+}
+
+header img {
+	max-width: 194px;
+	max-height: 25px;
+	margin: 27px 63px 27px 63px;
+}
+
+.container .welcome__container {
+	margin: 22px 18px 0 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.welcome__container h4 {
+	margin-bottom: 16px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.welcome__container .discover {
+	height: 40px;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 17px 35px 18px;
+}
+
+form {
+	width: 320px;
+	height: 223px;
+}
+
+#email {
+	margin: 0 16px 16px 16px;
+}
+
+#password {
+	margin: 0 16px 16px 16px;
+}
+
+#email,
+#password,
+#submit {
+	min-width: 288px;
+	min-height: 47px;
+	padding: 13px 11px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+}
+
+#submit {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: var(--exo-letter);
+}
+
+.icon-pass-inactive {
+	transform: translateY(-45px);
+	margin-left: 270px;
+}
+
+.icon-pass-active {
+	display: none;
+	transform: translateY(-45px);
+	margin-left: 270px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+	border-color: var(--checkbox-color);
+	color: var(--whitetext-color);
+	content: url(/assets/assets-login/check1.svg);
+	background-color: #36b972;
+}
+
+.checkbox__container label {
+	position: relative;
+	padding-left: 1.7rem;
+}
+
+.checkbox__container label:before {
+	content: " ";
+	border: solid 1px white;
+	border-radius: 4px;
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	left: 0;
+	background-color: var(--bg-color);
+}
+
+.remember__forgot {
+	margin: 0 16px 30px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#submit {
+	margin: 0 16px 32px 16px;
+	background-color: var(--button-color);
+	color: var(--whitetext-color);
+}
+
+.forgot__pass,
+.register-now {
+	color: var(--greentext-color);
+	text-decoration: none;
+}
+
+.register__now {
+	margin: 32px 49px 26px 49px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.register {
+	margin-right: 6px;
+}
+
+.alternative span {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: 1.5rem;
+	margin-left: 48%;
+}
+
+.alternative span::before,
+.alternative span::after {
+	position: absolute;
+	content: " ";
+	height: 1px;
+	width: 117px;
+	bottom: 40%;
+	right: 2.5rem;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.alternative span::after {
+	left: 1rem;
+}
+
+.alternative span::before {
+	right: 1rem;
+}
+
+.footer .social__fields {
+	min-width: 288px;
+	min-height: 47px;
+	border-radius: 4px;
+	outline: none;
+	border: 2px solid #ffffff;
+	margin: 16px;
+	background-color: rgba(18, 18, 18, 0.5);
+}
+
+.footer .social__fields span {
+	margin: 15px 50px 13px 12px;
+}
+
+.footer a {
+	color: var(--whitetext-color);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	margin-left: 38px;
+}

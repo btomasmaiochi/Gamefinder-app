@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@400;700&family=League+Spartan:wght@300;400;500;600&family=Open+Sans&family=PT+Sans&family=Roboto+Serif:opsz,wght@8..144,200&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
